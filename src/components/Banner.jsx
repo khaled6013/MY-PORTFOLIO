@@ -1,4 +1,4 @@
-import { FaTelegramPlane, FaGithub, FaTwitter, FaInstagram, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { FaTelegramPlane, FaGithub, FaTwitter, FaInstagram, FaFacebookF, FaLinkedinIn,FaWhatsapp  } from "react-icons/fa";
 import bannerImg from "../assets/k.jpg";
 
 const Banner = () => {
@@ -44,6 +44,12 @@ const Banner = () => {
                       className="border border-black rounded-full p-3 hover:bg-black hover:text-white transition-all duration-300"
                     >
                       <FaLinkedinIn />
+                    </a>
+                    <a
+                      href="#"
+                      className="border border-black rounded-full p-3 hover:bg-black hover:text-white transition-all duration-300"
+                    >
+                      <FaWhatsapp />
                     </a>
                     <a
                       href="#"
