@@ -22,7 +22,7 @@ const Banner = () => {
               {/* Hire Me + Social Icons */}
               <div className="lg:mt-4 mt-3">
                 <div className="flex flex-wrap justify-center lg:justify-start items-center gap-4 lg:gap-6 py-6">
-                  <button className="flex items-center gap-2 bg-[#FDC76B] border-[#FDC76B] border-2 text-black font-semibold px-6 py-3 rounded-full transition-all duration-300 hover:border-black hover:text-white">
+                  <button className="flex items-center gap-2 text-white bg-linear-to-r from-blue-500 to-cyan-400 font-semibold px-6 py-3 rounded-full e hover:shadow-lg hover:shadow-blue-400/40 transition-all duration-300 cursor-pointer">
                     HIRE ME
                     <FaTelegramPlane className="text-lg" />
                   </button>
@@ -71,11 +71,13 @@ const Banner = () => {
 
             {/* Right Image */}
             <div className="lg:w-3/6 w-full flex justify-center">
-              <img
-                src={bannerImg}
-                alt="bannerImg"
-                className="w-[250px] md:w-[300px] lg:w-[350px] rounded-full border-[#FDC76B] border-4 object-cover lg:block hidden"
-              />
+              <div className="p-1 bg-linear-to-r from-blue-500 to-cyan-400 rounded-full inline-block lg:block">
+                <img
+                  src={bannerImg}
+                  alt="bannerImg"
+                  className="w-[250px] md:w-[300px] lg:w-[350px] rounded-full object-cover"
+                />
+              </div>
             </div>
           </div>
         </div>
