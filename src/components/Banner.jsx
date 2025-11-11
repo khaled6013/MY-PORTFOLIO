@@ -10,10 +10,10 @@ const Banner = () => {
             {/* Left Content */}
             <div className="lg:w-3/6 w-full mt-10 lg:mt-0">
               <div>
-                <h2 className="lg:font-extrabold font-bold font-pops text-black lg:text-[67px] md:text-[45px] text-[35px] leading-tight opacity-[75%]">
+                <h2 className="lg:font-extrabold font-bold font-pops text-black lg:text-[67px] md:text-[45px] text-[35px] leading-tight opacity-75">
                   Hello, I’m <br /> Khaledur Rahman
                 </h2>
-                <p className="font-normal font-pops text-black lg:text-[19px] md:text-[17px] text-[16px] pt-3 opacity-[75%]">
+                <p className="font-normal font-pops text-black lg:text-[19px] md:text-[17px] text-[16px] pt-3 opacity-75">
                   Hi! I’m A front end developer – Creating Bold & Brave Interface
                   Design For Companies All Across The World.
                 </p>
@@ -27,7 +27,7 @@ const Banner = () => {
                     <FaTelegramPlane className="text-lg" />
                   </button>
 
-                  <p className="font-pops text-black text-[17px] opacity-[75%] font-medium whitespace-nowrap">
+                  <p className="font-pops text-black text-[17px] opacity-75 font-medium whitespace-nowrap">
                     Check Out My :
                   </p>
 
