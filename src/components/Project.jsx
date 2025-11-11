@@ -13,21 +13,21 @@ const projects = [
         tech: "React JS (API Integrated)",
         icon: <FaReact className="text-cyan-400 text-3xl" />,
         img: ecom,
-        link: "https://your-ecommerce-link.com", // Live link দিলে এখানে দিও
+        link: "https://zingy-mochi-1d5f2f.netlify.app/",
     },
     {
         title: "Finance Dashboard",
         tech: "React JS (Multi Page)",
         icon: <FaReact className="text-cyan-400 text-3xl" />,
         img: fin,
-        link: "https://your-finance-dashboard.com",
+        link: "https://vocal-boba-03d8ad.netlify.app/",
     },
     {
         title: "Cyber Landing Page",
         tech: "Next JS (Single Page)",
         icon: <SiNextdotjs className="text-black text-3xl dark:text-white" />,
         img: cyber,
-        link: "https://your-finance-dashboard.com", // Coming soon
+        link: "https://your-finance-dashboard.com", 
     },
     {
         title: "Portfolio Agency",
@@ -46,7 +46,6 @@ const Project = () => {
                 <h2 className="font-pops lg:font-extrabold font-bold text-black lg:text-[67px] md:text-[45px] text-[32px] opacity-75 leading-tight">
                     My Projects
                 </h2>
-                {/* Project Cards */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:mt-10 mt-3">
                     {projects.map((project, index) => (
                         <motion.div
@@ -59,7 +58,6 @@ const Project = () => {
                             transition={{ duration: 0.6, delay: index * 0.1 }}
                             viewport={{ once: true }}
                         >
-                            {/* Image */}
                             <div className="relative h-56 md:h-64 lg:h-72 overflow-hidden">
                                 <img
                                     src={project.img}
@@ -68,8 +66,6 @@ const Project = () => {
                                 />
                                 <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
                             </div>
-
-                            {/* Text */}
                             <div className="p-5 text-center relative z-10">
                                 <div className="flex justify-center items-center gap-2 mb-3">
                                     {project.icon}
@@ -96,8 +92,6 @@ const Project = () => {
                                     </p>
                                 )}
                             </div>
-
-                            {/* Glow Effect */}
                             <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-30 transition-all duration-500 bg-linear-to-r from-blue-400 via-cyan-300 to-purple-500 blur-xl -z-10"></div>
                         </motion.div>
                     ))}
