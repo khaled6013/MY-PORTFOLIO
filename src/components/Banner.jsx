@@ -33,7 +33,8 @@ const Banner = () => {
 
                   <div className="flex items-center gap-3 lg:gap-4">
                     <a
-                      href="#"
+                      href="https://github.com/khaled6013"
+                      target="_blank"
                       className="border border-black rounded-full p-3 hover:bg-black hover:text-white transition-all duration-300"
                     >
                       <FaGithub />
@@ -51,7 +52,8 @@ const Banner = () => {
                       <FaTwitter />
                     </a>
                     <a
-                      href="#"
+                      href="https://www.facebook.com/pk.khaled.7"
+                      target="_blank"
                       className="border border-black rounded-full p-3 hover:bg-black hover:text-white transition-all duration-300"
                     >
                       <FaFacebookF />
