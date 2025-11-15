@@ -7,7 +7,6 @@ const Banner = () => {
       <div className="lg:py-14 md:py-10 py-4 bg-[#E9E9E9]">
         <div className="lg:w-10/12 w-11/12 mx-auto">
           <div className="lg:flex items-center flex-col-reverse lg:flex-row text-center lg:text-left">
-            {/* Left Content */}
             <div className="lg:w-3/6 w-full mt-10 lg:mt-0">
               <div>
                 <h2 className="lg:font-extrabold font-bold font-pops text-black lg:text-[67px] md:text-[45px] text-[35px] leading-tight opacity-75">
@@ -18,8 +17,6 @@ const Banner = () => {
                   Design For Companies All Across The World.
                 </p>
               </div>
-
-              {/* Hire Me + Social Icons */}
               <div className="lg:mt-4 mt-3">
                 <div className="flex flex-wrap justify-center lg:justify-start items-center gap-4 lg:gap-6 py-6">
                   <button className="flex items-center gap-2 text-white bg-linear-to-r from-blue-500 to-cyan-400 font-semibold px-6 py-3 rounded-full e hover:shadow-lg hover:shadow-blue-400/40 transition-all duration-300 cursor-pointer">
@@ -46,13 +43,15 @@ const Banner = () => {
                       <FaLinkedinIn />
                     </a>
                     <a
-                      href="#"
+                      href="https://web.whatsapp.com/"
+                      target="_blank"
                       className="border border-black rounded-full p-3 hover:bg-black hover:text-white transition-all duration-300"
                     >
                       <FaWhatsapp />
                     </a>
                     <a
-                      href="#"
+                      href="https://x.com/khaledur_r62302"
+                      target="_blank"
                       className="border border-black rounded-full p-3 hover:bg-black hover:text-white transition-all duration-300"
                     >
                       <FaTwitter />
@@ -65,7 +64,8 @@ const Banner = () => {
                       <FaFacebookF />
                     </a>
                     <a
-                      href="#"
+                      href="https://www.instagram.com/_kha_led_0/"
+                      target="_blank"
                       className="border border-black rounded-full p-3 hover:bg-black hover:text-white transition-all duration-300"
                     >
                       <FaInstagram />
@@ -74,8 +74,6 @@ const Banner = () => {
                 </div>
               </div>
             </div>
-
-            {/* Right Image */}
             <div className="lg:w-3/6 w-full flex justify-center">
               <div className="p-1 bg-linear-to-r from-blue-500 to-cyan-400 rounded-full inline-block lg:block">
                 <img

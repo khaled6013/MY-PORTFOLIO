@@ -27,7 +27,7 @@ const projects = [
         tech: "Next JS (Single Page)",
         icon: <SiNextdotjs className="text-black text-3xl dark:text-white" />,
         img: cyber,
-        link: "https://your-finance-dashboard.com", 
+        link: "https://cyber-ai-iota.vercel.app/", 
     },
     {
         title: "Portfolio Agency",
