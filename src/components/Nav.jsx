@@ -13,13 +13,13 @@ const Nav = () => {
                             <div className="lg:ml-20 lg:mt-0 mt-3">
                                 <ul className={`lg:flex items-center lg:justify-start text-center duration-200 ease-in-out ${open == true ? "block" : "hidden"}`}>
                                     <li className='lg:pt-0 pt-1'>
-                                        <a href="#" className="font-medium font-pops text-black hover:text-[#FDC76B] lg:text-[19px] text-[16px]">About Me</a>
+                                        <a href="#" className="font-medium font-pops text-black hover:text-cyan-400 lg:text-[19px] text-[16px]">About Me</a>
                                     </li>
                                     <li className='lg:pt-0 pt-1'>
-                                        <a href="#" className="font-medium font-pops text-black hover:text-[#FDC76B] lg:text-[19px] text-[16px] lg:pl-10">Skill</a>
+                                        <a href="#" className="font-medium font-pops text-black hover:text-cyan-400 lg:text-[19px] text-[16px] lg:pl-10">Skill</a>
                                     </li>
                                     <li className='lg:pt-0 pt-1'>
-                                        <a href="#" className="font-medium font-pops text-black hover:text-[#FDC76B] lg:text-[19px] text-[16px] lg:pl-10">Project</a>
+                                        <a href="#" className="font-medium font-pops text-black hover:text-cyan-400 lg:text-[19px] text-[16px] lg:pl-10">Project</a>
                                     </li>
                                 </ul>
                             </div>
@@ -31,7 +31,7 @@ const Nav = () => {
                                     className="lg:py-[13px] py-[9px] lg:px-[30px] px-[21px] text-white bg-linear-to-r from-blue-500 to-cyan-400 rounded-[30px] font-pops lg:font-medium uppercase hover:shadow-lg hover:shadow-blue-400/40 transition-all duration-300 lg:ml-10">
                                     Download CV
                                 </a>
-                                <a href="#" className="lg:py-[13px] py-[9px] lg:px-[30px] px-[21px] text-white bg-linear-to-r from-blue-500 to-cyan-400 rounded-[30px] font-pops lg:font-medium  uppercase hover:shadow-lg hover:shadow-blue-400/40 transition-all duration-300 ">Contact</a>
+                                <a href="#contact" className="lg:py-[13px] py-[9px] lg:px-[30px] px-[21px] text-white bg-linear-to-r from-blue-500 to-cyan-400 rounded-[30px] font-pops lg:font-medium  uppercase hover:shadow-lg hover:shadow-blue-400/40 transition-all duration-300 ">Contact</a>
                             </div>
                         </div>
                         <div className="lg:hidden absolute top-[23px] right-3" onClick={() => setOpen(!open)}>
