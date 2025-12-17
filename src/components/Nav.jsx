@@ -26,7 +26,11 @@ const Nav = () => {
                         </div>
                         <div className="lg:w-1/4 w-full lg:mt-0 mt-3">
                             <div className="flex items-center lg:justify-between justify-center lg:gap-x-0 gap-x-2">
-                                <a href="#" className="lg:py-[13px] py-[9px] lg:px-[30px] px-[21px] text-white bg-linear-to-r from-blue-500 to-cyan-400 rounded-[30px] font-pops lg:font-medium  uppercase hover:shadow-lg hover:shadow-blue-400/40 transition-all duration-300 lg:ml-10">Download CV</a>
+                                <a
+                                    href="https://drive.google.com/uc?export=download&id=1nec1Mgm40gvmmEpfFsgj2N4mHESMEG-i"
+                                    className="lg:py-[13px] py-[9px] lg:px-[30px] px-[21px] text-white bg-linear-to-r from-blue-500 to-cyan-400 rounded-[30px] font-pops lg:font-medium uppercase hover:shadow-lg hover:shadow-blue-400/40 transition-all duration-300 lg:ml-10">
+                                    Download CV
+                                </a>
                                 <a href="#" className="lg:py-[13px] py-[9px] lg:px-[30px] px-[21px] text-white bg-linear-to-r from-blue-500 to-cyan-400 rounded-[30px] font-pops lg:font-medium  uppercase hover:shadow-lg hover:shadow-blue-400/40 transition-all duration-300 ">Contact</a>
                             </div>
                         </div>
