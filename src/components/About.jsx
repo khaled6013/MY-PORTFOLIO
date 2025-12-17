@@ -3,7 +3,7 @@ import React from 'react'
 const About = () => {
     return (
         <>
-            <div className="lg:py-20 py-10 bg-[#E0E0E0]">
+            <div id='about' className="lg:py-20 py-10 bg-[#E0E0E0]">
                 <div className="lg:w-10/12 w-11/12 mx-auto">
                     <div className="text-center">
                         <h2 className="font-pops lg:font-extrabold font-bold text-black lg:text-[67px] md:text-[45px] text-[32px] opacity-75 leading-tight">

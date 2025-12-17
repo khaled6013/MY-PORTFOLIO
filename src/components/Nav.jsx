@@ -13,13 +13,13 @@ const Nav = () => {
                             <div className="lg:ml-20 lg:mt-0 mt-3">
                                 <ul className={`lg:flex items-center lg:justify-start text-center duration-200 ease-in-out ${open == true ? "block" : "hidden"}`}>
                                     <li className='lg:pt-0 pt-1'>
-                                        <a href="#" className="font-medium font-pops text-black hover:text-cyan-400 lg:text-[19px] text-[16px]">About Me</a>
+                                        <a href="#about" className="font-medium font-pops text-black hover:text-cyan-400 lg:text-[19px] text-[16px]">About Me</a>
                                     </li>
                                     <li className='lg:pt-0 pt-1'>
-                                        <a href="#" className="font-medium font-pops text-black hover:text-cyan-400 lg:text-[19px] text-[16px] lg:pl-10">Skill</a>
+                                        <a href="#skill" className="font-medium font-pops text-black hover:text-cyan-400 lg:text-[19px] text-[16px] lg:pl-10">Skill</a>
                                     </li>
                                     <li className='lg:pt-0 pt-1'>
-                                        <a href="#" className="font-medium font-pops text-black hover:text-cyan-400 lg:text-[19px] text-[16px] lg:pl-10">Project</a>
+                                        <a href="#project" className="font-medium font-pops text-black hover:text-cyan-400 lg:text-[19px] text-[16px] lg:pl-10">Project</a>
                                     </li>
                                 </ul>
                             </div>

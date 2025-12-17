@@ -41,7 +41,7 @@ const projects = [
 
 const Project = () => {
   return (
-    <section className="lg:py-20 py-10 bg-[#E0E0E0]">
+    <section id="project" className="lg:py-20 py-10 bg-[#E0E0E0]">
       <div className="w-11/12 lg:w-10/12 mx-auto text-center">
         <h2 className="font-pops lg:font-extrabold font-bold text-black lg:text-[67px] md:text-[45px] text-[32px] opacity-75 leading-tight">
           My Projects
