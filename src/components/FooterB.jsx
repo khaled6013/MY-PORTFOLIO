@@ -39,29 +39,29 @@ const FooterB = () => {
         <div className="border-b border-black mb-6"></div>
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <p className="text-gray-700 text-sm text-center md:text-left">
-            Copyright © 2023 By <span className="font-semibold">DV Printplan</span> All Rights Reserved.
+            &copy; 2024 Khaled. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
             <a
-              href="#"
+              
               className="p-3 bg-white hover:bg-black hover:text-white text-black rounded-sm shadow-sm transition-all duration-300"
             >
               <FaFacebookF />
             </a>
             <a
-              href="#"
+              
               className="p-3 bg-white hover:bg-black hover:text-white text-black rounded-sm shadow-sm transition-all duration-300"
             >
               <FaTwitter />
             </a>
             <a
-              href="#"
+              
               className="p-3 bg-white hover:bg-black hover:text-white text-black rounded-sm shadow-sm transition-all duration-300"
             >
               <FaLinkedinIn />
             </a>
             <a
-              href="#"
+            
               className="p-3 bg-white hover:bg-black hover:text-white text-black rounded-sm shadow-sm transition-all duration-300"
             >
               <FaInstagram />
