@@ -7,6 +7,7 @@ import ecom from "../assets/e-com.png";
 import qu from "../assets/qu.png";
 import cyber from "../assets/cyber.png";
 import part from "../assets/part.png";
+import hekto from "../assets/hekto.png";
 
 const projects = [
   {
@@ -15,6 +16,13 @@ const projects = [
     icon: <FaReact className="text-cyan-400 text-3xl" />,
     img: ecom,
     link: "https://zingy-mochi-1d5f2f.netlify.app/",
+  },
+  {
+    title: "Hekto Shop",
+    tech: "React JS (API Integrated)",
+    icon: <FaReact className="text-cyan-400 text-3xl" />,
+    img: hekto,
+    link: "https://e-commerce-m-ten.vercel.app/",
   },
   {
     title: "Quarter",
