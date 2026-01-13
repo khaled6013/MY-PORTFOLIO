@@ -5,11 +5,11 @@ const Nav = () => {
     const [open, setOpen] = useState(false);
     return (
         <>
-            <div className="lg:py-4 py-3 bg-white">
+            <div className="lg:py-3 py-2 bg-white lg:fixed top-0 z-50 w-full shadow-md">
                 <div className="lg:w-10/12 w-11/12 mx-auto">
                     <div className="lg:flex items-center justify-between">
                         <div className="lg:flex items-center lg:w-3/4 w-full">
-                            <h2 className="lg:font-extrabold font-bold font-pops text-black lg:text-[40px] text-[30px] cursor-pointer">KHALED</h2>
+                            <a href="#" className="lg:font-extrabold font-bold font-pops text-black lg:text-[40px] text-[30px] cursor-pointer">KHALED</a>
                             <div className="lg:ml-20 lg:mt-0 mt-3">
                                 <ul className={`lg:flex items-center lg:justify-start text-center duration-200 ease-in-out ${open == true ? "block" : "hidden"}`}>
                                     <li className='lg:pt-0 pt-1'>
