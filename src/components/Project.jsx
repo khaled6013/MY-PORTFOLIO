@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaReact } from "react-icons/fa";
+import { FaReact, FaGithub } from "react-icons/fa"; 
 import { SiNextdotjs } from "react-icons/si";
 
 import ecom from "../assets/e-com.png";
@@ -10,7 +10,6 @@ import part from "../assets/part.png";
 import hekto from "../assets/hekto.png";
 import Authentication from '../assets/Athu.png'
 
-
 const projects = [
   {
     title: "E-Commerce Website",
@@ -18,6 +17,7 @@ const projects = [
     icon: <FaReact className="text-cyan-400 text-3xl" />,
     img: ecom,
     link: "https://zingy-mochi-1d5f2f.netlify.app/",
+    github: "https://github.com/khaled6013/E-commerce", 
   },
   {
     title: "Hekto Shop",
@@ -25,6 +25,7 @@ const projects = [
     icon: <FaReact className="text-cyan-400 text-3xl" />,
     img: hekto,
     link: "https://e-commerce-m-ten.vercel.app/",
+    github: "https://github.com/khaled6013/E-commerce--M-", 
   },
   {
     title: "Quarter",
@@ -32,6 +33,7 @@ const projects = [
     icon: <SiNextdotjs className="text-black text-3xl" />,
     img: qu,
     link: "https://quarter-next-js.vercel.app/",
+    github: "https://github.com/khaled6013/Quarter-next-js", 
   },
   {
     title: "Cyber Landing Page",
@@ -39,6 +41,7 @@ const projects = [
     icon: <SiNextdotjs className="text-black text-3xl" />,
     img: cyber,
     link: "https://cyber-ai-iota.vercel.app/",
+    github: "https://github.com/khaled6013/cyber-ai", 
   },
   {
     title: "Authentication",
@@ -46,13 +49,7 @@ const projects = [
     icon: <FaReact className="text-cyan-400 text-3xl" />,
     img: Authentication,
     link: "https://authentication-rouge-seven.vercel.app/",
-  },
-  {
-    title: "Portfolio Agency",
-    tech: "Next JS (Multi Page)",
-    icon: <SiNextdotjs className="text-black text-3xl" />,
-    img: part,
-    link: "https://your-finance-dashboard.com",
+    github: "https://github.com/khaled6013/Authentication",
   },
 ];
 
@@ -68,10 +65,7 @@ const Project = () => {
           {projects.map((project, index) => (
             <motion.div
               key={index}
-              onClick={() =>
-                project.link !== "#" && window.open(project.link, "_blank")
-              }
-              className="group relative bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 cursor-pointer border border-transparent hover:border-blue-400"
+              className="group relative bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 border border-transparent hover:border-blue-400"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.96 }}
               initial={{ opacity: 0, y: 40 }}
@@ -79,7 +73,6 @@ const Project = () => {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              {/* Image */}
               <div className="relative h-56 md:h-64 lg:h-72 overflow-hidden">
                 <img
                   src={project.img}
@@ -88,8 +81,6 @@ const Project = () => {
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500" />
               </div>
-
-              {/* Content */}
               <div className="p-5 text-center relative z-10">
                 <div className="flex justify-center items-center gap-2 mb-3">
                   {project.icon}
@@ -101,23 +92,32 @@ const Project = () => {
                 <h3 className="font-bold text-[20px] text-gray-800 group-hover:text-blue-500 transition-all duration-300">
                   {project.title}
                 </h3>
+                <div className="flex justify-center gap-3 mt-4">
+                    {project.link !== "#" ? (
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block text-xs font-semibold text-white bg-linear-to-r from-blue-500 to-cyan-400 px-4 py-2 rounded-full hover:shadow-lg hover:shadow-blue-400/40 transition-all duration-300"
+                      >
+                        Live Demo
+                      </a>
+                    ) : (
+                      <p className="text-gray-500 text-sm italic">
+                        Coming Soon
+                      </p>
+                    )}
 
-                {/* View Project Button */}
-                {project.link !== "#" ? (
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    onClick={(e) => e.stopPropagation()}
-                    className="inline-block mt-4 text-sm font-semibold text-white bg-linear-to-r from-blue-500 to-cyan-400 px-4 py-2 rounded-full hover:shadow-lg hover:shadow-blue-400/40 transition-all duration-300"
-                  >
-                    View Project
-                  </a>
-                ) : (
-                  <p className="text-gray-500 text-sm mt-4 italic">
-                    Coming Soon
-                  </p>
-                )}
+                    {/* GitHub Button */}
+                    <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1 text-xs font-semibold text-gray-700 border border-gray-700 px-4 py-2 rounded-full hover:bg-black hover:text-white transition-all duration-300"
+                    >
+                        <FaGithub /> Code
+                    </a>
+                </div>
               </div>
 
               {/* Glow Effect */}
