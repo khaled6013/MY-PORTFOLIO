@@ -14,8 +14,8 @@ const Banner = () => {
   return (
     <section className="bg-[#F3F4F6] min-h-screen flex items-center pt-32 pb-10 lg:pt-0 lg:pb-0 relative overflow-hidden">
       {/* Background Shapes (Optional Decoration) */}
-      <div className="absolute top-[-10%] right-[-5%] w-96 h-96 bg-blue-200/30 rounded-full blur-3xl -z-0" />
-      <div className="absolute bottom-[-10%] left-[-10%] w-72 h-72 bg-cyan-200/30 rounded-full blur-3xl -z-0" />
+      <div className="absolute top-[-10%] right-[-5%] w-96 h-96 bg-blue-200/30 rounded-full blur-3xl z-0" />
+      <div className="absolute bottom-[-10%] left-[-10%] w-72 h-72 bg-cyan-200/30 rounded-full blur-3xl z-0" />
 
       <div className="w-11/12 max-w-7xl mx-auto">
         <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-10 lg:gap-20">
@@ -83,7 +83,7 @@ const Banner = () => {
                 <img
                   src={bannerImg}
                   alt="Khaledur Rahman"
-                  className="w-full h-full object-cover"
+                  className="w-full lg:w-[320px] h-full object-cover"
                 />
               </div>
               <motion.div 
