@@ -8,6 +8,8 @@ import qu from "../assets/qu.png";
 import cyber from "../assets/cyber.png";
 import part from "../assets/part.png";
 import hekto from "../assets/hekto.png";
+import Authentication from '../assets/Athu.png'
+
 
 const projects = [
   {
@@ -37,6 +39,13 @@ const projects = [
     icon: <SiNextdotjs className="text-black text-3xl" />,
     img: cyber,
     link: "https://cyber-ai-iota.vercel.app/",
+  },
+  {
+    title: "Authentication",
+    tech: "React JS (Authentication)",
+    icon: <FaReact className="text-cyan-400 text-3xl" />,
+    img: Authentication,
+    link: "https://authentication-rouge-seven.vercel.app/",
   },
   {
     title: "Portfolio Agency",
