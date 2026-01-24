@@ -31,6 +31,12 @@ const FooterB = () => {
               </a>
             </li>
             <li>
+              <a href="#services" className="hover:text-blue-400 transition-colors duration-300 relative group">
+                Services
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
+              </a>
+            </li>
+            <li>
               <a href="#skill" className="hover:text-blue-400 transition-colors duration-300 relative group">
                 Skills
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
@@ -69,8 +75,6 @@ const FooterB = () => {
               <FaFacebookF />
             </a>
             <a 
-              href="#" 
-              target="_blank" 
               rel="noreferrer"
               className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 text-gray-300 hover:bg-[#0077B5] hover:text-white transition-all duration-300 hover:-translate-y-1"
             >

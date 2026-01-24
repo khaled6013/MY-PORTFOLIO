@@ -6,7 +6,7 @@ import { FaUser, FaPaperPlane } from "react-icons/fa";
 
 const Footer = () => {
     const form = useRef();
-    const [status, setStatus] = useState(null); // null, 'sending', 'success', 'error'
+    const [status, setStatus] = useState(null); 
 
     const sendEmail = (e) => {
         e.preventDefault();
