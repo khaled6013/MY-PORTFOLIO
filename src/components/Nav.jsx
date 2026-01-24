@@ -10,6 +10,7 @@ const Nav = () => {
         { name: "About", href: "#about" },
         { name: "Skills", href: "#skill" },
         { name: "Projects", href: "#project" },
+        { name: "services", href: "#services" },
     ];
 
     return (
