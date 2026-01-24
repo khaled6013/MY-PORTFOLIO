@@ -8,9 +8,9 @@ const Nav = () => {
     const [open, setOpen] = useState(false);
     const navLinks = [
         { name: "About", href: "#about" },
+        { name: "services", href: "#services" },
         { name: "Skills", href: "#skill" },
         { name: "Projects", href: "#project" },
-        { name: "services", href: "#services" },
     ];
 
     return (
