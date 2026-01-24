@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaBars } from "react-icons/fa6";
 import { RxCross2 } from "react-icons/rx";
@@ -6,12 +6,44 @@ import { FiDownload } from "react-icons/fi";
 
 const Nav = () => {
     const [open, setOpen] = useState(false);
+    const [activeSection, setActiveSection] = useState(""); 
+
     const navLinks = [
         { name: "About", href: "#about" },
-        { name: "services", href: "#services" },
+        { name: "Services", href: "#services" },
         { name: "Skills", href: "#skill" },
         { name: "Projects", href: "#project" },
     ];
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollPosition = window.scrollY + 150; 
+
+            let currentSection = "";
+            
+            navLinks.forEach((link) => {
+                const sectionId = link.href.substring(1); 
+                const element = document.getElementById(sectionId);
+                
+                if (element) {
+                    const offsetTop = element.offsetTop;
+                    const offsetHeight = element.offsetHeight;
+
+                    if (
+                        scrollPosition >= offsetTop &&
+                        scrollPosition < offsetTop + offsetHeight
+                    ) {
+                        currentSection = link.href;
+                    }
+                }
+            });
+
+            setActiveSection(currentSection);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, [navLinks]);
 
     return (
         <>
@@ -35,7 +67,11 @@ const Nav = () => {
                             <li key={index}>
                                 <a 
                                     href={link.href} 
-                                    className="font-medium text-gray-600 hover:text-blue-600 transition-colors font-pops text-sm uppercase tracking-wide"
+                                    className={`font-medium font-pops text-sm uppercase tracking-wide transition-all duration-300 ${
+                                        activeSection === link.href 
+                                            ? "text-blue-600 font-bold scale-105" 
+                                            : "text-gray-600 hover:text-blue-600" 
+                                    }`}
                                 >
                                     {link.name}
                                 </a>
@@ -68,7 +104,7 @@ const Nav = () => {
                 </div>
             </motion.div>
 
-            {/* Mobile Dropdown Menu (AnimatePresence for smooth exit) */}
+            {/* Mobile Dropdown Menu */}
             <AnimatePresence>
                 {open && (
                     <motion.div
@@ -81,7 +117,14 @@ const Nav = () => {
                         <ul className="flex flex-col items-center gap-6 text-center">
                             {navLinks.map((link, index) => (
                                 <li key={index} onClick={() => setOpen(false)}>
-                                    <a href={link.href} className="text-xl font-bold text-gray-800 hover:text-blue-500 font-pops">
+                                    <a 
+                                        href={link.href} 
+                                        className={`text-xl font-bold font-pops transition-colors ${
+                                            activeSection === link.href 
+                                                ? "text-blue-600" 
+                                                : "text-gray-800 hover:text-blue-500"
+                                        }`}
+                                    >
                                         {link.name}
                                     </a>
                                 </li>
